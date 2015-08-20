@@ -150,6 +150,30 @@
                         <TextBlock Text="Dark" Foreground="{DynamicResource text-dark}"/>
                     </RadioButton>
                 </StackPanel>
+                <Grid Margin="0,3"
+                      TextElement.FontSize="{StaticResource SettingNameFontSize}"
+                      TextElement.Foreground="{DynamicResource text-dark}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="{StaticResource SettingNameColumnWidth}"/>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="MyAnimeList Login:"/>
+                    <TextBlock Grid.Column="2" Grid.Row="0" Text="User name :" Margin="0,0,5,0"/>
+                    <TextBlock Grid.Column="2" Grid.Row="1" Text="Password :" Margin="0,0,5,0"/>
+                    
+                    <TextBox Grid.Column="3" Grid.Row="0" Text="{Binding Username}"/>
+                    <PasswordBox x:Name="PasswordBox" Grid.Column="3" Grid.Row="1" PasswordChar="*"/>
+                    <Button Grid.Column="3" Grid.Row="2" Content="Login" 
+                            Command="{Binding LoginCommand}"
+                            CommandParameter="{Binding ElementName=PasswordBox}"/>
+                </Grid>
             </StackPanel>
         </ScrollViewer>
         <StackPanel

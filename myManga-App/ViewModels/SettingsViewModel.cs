@@ -12,7 +12,9 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Windows.Controls;
 using System.Windows.Input;
+using MyAnimeList;
 
 namespace myManga_App.ViewModels
 {
@@ -64,6 +66,10 @@ namespace myManga_App.ViewModels
             if (CloseEvent != null)
                 CloseEvent(this, null);
         }
+
+        protected DelegateCommand<object> loginCommand;
+        public ICommand LoginCommand
+        { get { return loginCommand ?? (loginCommand = new DelegateCommand<object>(LoginToMyAnimeList)); } }
         #endregion
 
         #region Extention List Movements
@@ -238,6 +244,24 @@ namespace myManga_App.ViewModels
         }
         #endregion
 
+        #region Login Details
+
+        private string _username;
+
+        public string Username
+        {
+            get { return _username; }
+            set
+            {
+                if (_username != value)
+                {
+                    _username = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        #endregion
+
         public SettingsViewModel()
         {
             if (!IsInDesignMode)
@@ -300,6 +324,17 @@ namespace myManga_App.ViewModels
             App.UserConfig.RemoveBackChapters = this.RemoveBackChapters;
             App.UserConfig.BackChaptersToKeep = this.BackChaptersToKeep;
             App.UserConfig.Theme = this.Theme;
+        }
+
+        public void LoginToMyAnimeList(object pwBox)
+        {
+            // This slightly goes against MVVM, but is a way to pass the password into the VM
+            var box = pwBox as PasswordBox;
+            if (box == null)
+                return;
+            
+            IMyAnimeList myAnimeList = new MyAnimeListInteraction();
+            myAnimeList.ConfirmLoginDetails(Username, box.Password);
         }
 
         private void ConvertStoredFiles()

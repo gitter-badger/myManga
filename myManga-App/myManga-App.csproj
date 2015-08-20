@@ -278,6 +278,10 @@
       <Name>Core</Name>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\myManga-Plugin\MyAnimeList\MyAnimeList.csproj">
+      <Project>{6760595c-7393-47b6-be30-34ff4fe4e1a7}</Project>
+      <Name>MyAnimeList</Name>
+    </ProjectReference>
     <ProjectReference Include="..\myManga-Plugin\myMangaSiteExtension\myMangaSiteExtension.csproj">
       <Project>{088e2638-3bed-4b11-a548-36e3539d86f2}</Project>
       <Name>myMangaSiteExtension</Name>
