@@ -6,7 +6,6 @@ using System.Text.RegularExpressions;
 using System.Windows;
 using Core.Other;
 using HtmlAgilityPack;
-using myMangaSiteExtension;
 using myMangaSiteExtension.Attributes;
 using myMangaSiteExtension.Enums;
 using myMangaSiteExtension.Interfaces;

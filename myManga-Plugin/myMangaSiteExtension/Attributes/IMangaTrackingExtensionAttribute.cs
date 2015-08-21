@@ -5,7 +5,7 @@ using myMangaSiteExtension.Enums;
 namespace myMangaSiteExtension.Attributes
 {
     [DebuggerStepThrough, AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    public sealed class IReaderTrackingExtensionDescriptionAttribute : Attribute
+    public sealed class IMangaTrackingExtensionDescriptionAttribute : Attribute
     {
         /// <summary>
         /// Name of the supported site.
@@ -20,7 +20,18 @@ namespace myMangaSiteExtension.Attributes
         /// </summary>
         public String Version = "0.0.0";
 
-        public UserLoginType UserLoginType = UserLoginType.None;
+        /// <summary>
+        /// ISiteExtension attribute.
+        /// </summary>
+        /// <param name="Name">Name of the site</param>
+        /// <param name="URLFormat">Format of the sites url</param>
+        /// <param name="RefererHeader">Referer header to use when connecting to the site</param>
+        public IMangaTrackingExtensionDescriptionAttribute(String Name, String Author, String Version)
+        {
+            this.Name = Name;
+            this.Author = Author;
+            this.Version = Version;
+        }
 
         public override string ToString()
         {

@@ -46,6 +46,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaTraders", "myManga-ISi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAnimeList", "myManga-Plugin\MyAnimeList\MyAnimeList.csproj", "{6760595C-7393-47B6-BE30-34FF4FE4E1A7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "myManga-IMangaTrackingExtentions", "myManga-IMangaTrackingExtentions", "{9C14E6A1-BA20-4236-B520-743384D58C79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAnimeList", "myManga-IMangaTrackingExtentions\MyAnimeList\MyAnimeList.csproj", "{F2FF740C-643B-4A3B-99F3-003F717670A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +153,14 @@ Global
 		{6760595C-7393-47B6-BE30-34FF4FE4E1A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6760595C-7393-47B6-BE30-34FF4FE4E1A7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6760595C-7393-47B6-BE30-34FF4FE4E1A7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F2FF740C-643B-4A3B-99F3-003F717670A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2FF740C-643B-4A3B-99F3-003F717670A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2FF740C-643B-4A3B-99F3-003F717670A4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F2FF740C-643B-4A3B-99F3-003F717670A4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F2FF740C-643B-4A3B-99F3-003F717670A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2FF740C-643B-4A3B-99F3-003F717670A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2FF740C-643B-4A3B-99F3-003F717670A4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F2FF740C-643B-4A3B-99F3-003F717670A4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,5 +177,6 @@ Global
 		{9D1AC8D3-24F3-47DE-A950-3F48D20DD017} = {601D4E6B-2166-403C-922C-97F83ED5F945}
 		{6A91C9A9-1BAD-494F-82EC-047F94C9AAE8} = {A5464BE9-8F0C-49F8-AFCD-EC17E9B575E1}
 		{6760595C-7393-47B6-BE30-34FF4FE4E1A7} = {563FE6FF-10F2-49F7-80DF-6E01CB6E45D8}
+		{F2FF740C-643B-4A3B-99F3-003F717670A4} = {9C14E6A1-BA20-4236-B520-743384D58C79}
 	EndGlobalSection
 EndGlobal
