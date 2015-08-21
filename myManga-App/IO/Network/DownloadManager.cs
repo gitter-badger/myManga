@@ -2,8 +2,8 @@
 using Core.IO;
 using Core.MVVM;
 using myManga_App.IO.Local;
-using myMangaSiteExtension;
 using myMangaSiteExtension.Attributes;
+using myMangaSiteExtension.Enums;
 using myMangaSiteExtension.Interfaces;
 using myMangaSiteExtension.Objects;
 using myMangaSiteExtension.Utilities;

@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Xml.Serialization;
 using myMangaSiteExtension.Attributes;
 using System.Runtime.Serialization;
-using myMangaSiteExtension;
+using myMangaSiteExtension.Enums;
 
 namespace myManga_App.Objects
 {

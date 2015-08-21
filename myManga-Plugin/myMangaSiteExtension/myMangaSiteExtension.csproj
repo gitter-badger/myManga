@@ -44,8 +44,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\IDatabaseExtensionAttribute.cs" />
-    <Compile Include="Attributes\ISiteExtensionAttribute.cs" />
+    <Compile Include="Attributes\IDatabaseExtensionDescriptionAttribute.cs" />
+    <Compile Include="Attributes\IReaderTrackingExtensionAttribute.cs" />
+    <Compile Include="Attributes\ISiteExtensionDescriptionAttribute.cs" />
     <Compile Include="Collections\GenericCollection.cs" />
     <Compile Include="Collections\GenericEnumerator.cs" />
     <Compile Include="Collections\IDatabaseExtensionCollection.cs" />
@@ -53,7 +54,9 @@
     <Compile Include="Enums\MangaObjectType.cs" />
     <Compile Include="Enums\SearchMethod.cs" />
     <Compile Include="Enums\SupportedObjects.cs" />
+    <Compile Include="Enums\UserLoginType.cs" />
     <Compile Include="Interfaces\IDatabaseExtension.cs" />
+    <Compile Include="Interfaces\IReaderTracking.cs" />
     <Compile Include="Interfaces\ISiteExtension.cs" />
     <Compile Include="Objects\BookmarkObject.cs" />
     <Compile Include="Objects\ChapterObject.cs" />
