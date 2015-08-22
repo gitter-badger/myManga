@@ -1,6 +1,6 @@
-﻿using System;
+﻿using myMangaSiteExtension.Enums;
+using System;
 using System.Diagnostics;
-using myMangaSiteExtension.Enums;
 
 namespace myMangaSiteExtension.Attributes
 {
